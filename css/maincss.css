@@ -1,0 +1,227 @@
+*,*:after, *:before{
+	margin: 0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*{
+margin:0px;
+padding:0px;
+
+font-family:"Open Sans";
+}
+
+
+body{
+	background-image:url(../img/fondo2.jpg);
+}
+
+
+/*Logo pantalla principal*/
+
+
+img#logo{
+	float:left;
+	display: block;
+	height: 250px;
+	width: 350px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 150px;
+	-webkit-transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
+}
+
+header{
+	z-index: 9000;
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background-color: transparent;
+	-webkit-transition: background-color .5s;
+}
+
+nav{
+	z-index: 9000;
+	display: table;
+	margin: auto;
+	margin-top: 15px;
+	height: 40px;
+	-webkit-transition: margin-left .5s;
+}
+
+/*Imagen 1*/
+div#imagen1{
+background-size:cover;
+width:300px;
+height:200px;
+margin:30px;
+background-image: url(../img/fotos_cbtis/foto1.jpg);
+-webkit-border-radius: 20px 20px 20px 20px;
+}
+div#info1{
+
+position:absolute;
+width:300px;
+height:200px;
+background-color: rgba(31, 31, 31, 0.9);
+-webkit-border-radius: 20px 20px 20px 20px;
+
+}
+div#info1{
+-webkit-transition: opacity 0.2s;
+opacity:0;
+}
+div#imagen1:hover div#info1{
+opacity:1;
+}
+p#lt1{
+	color: white;
+	margin-top: 50px;
+position:absolute;
+font-size:40px;
+top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+-webkit-transition: margin 0.2s;
+margin-left:-80px;
+overflow:hidden;
+}
+div#imagen1:hover p#lt1{
+margin-left:80px;
+}
+/*.a{
+position:absolute; left: 100px;
+position:absolute; top: 100px;
+}*/
+
+
+/* body{
+
+	background: url(../img/fondopesadoprueba.jpg);
+background-size: 100%;
+} */
+
+/*contenedor para las Fotos*/
+
+.contenedor {
+	width: 90%;
+	margin:auto;
+	background:rgba(2, 4, 57,.7);
+
+
+	box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+/*Slider de presentacion*/
+
+.slider{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul{
+	display: flex;
+	padding:0;
+	width: 400%;
+
+animation: cambio 20s infinite; 
+animation-direction: alternate;
+}
+
+.slider li {
+	width: 100%;
+list-style: none;
+}
+
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0%}
+	20% {margin-left: 0%}
+
+	25% {margin-left: -100%}
+	45% {margin-left: -100%}
+
+	50% {margin-left: -200%}
+	70% {margin-left: -200%}
+
+	75% {margin-left: -300%}
+    90% {margin-left: -300%}
+
+    95% {margin-left: -300%}
+    100% {margin-left: -300%}
+}
+
+/*Pantalla de carga*/
+#contenedor_carga{
+	background-color: rgba(250, 240, 245, 0.9);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	z-index: 10000;
+}	
+
+#carga{
+
+	background:url(../img/engrane.png);
+	background-size:cover;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 50px;
+	bottom: 0;
+	margin: auto;
+-webkit-animation: girar 1.5s linear infinite;
+-o-animation: girar 1.5s linear infinite ;
+animation: girar 1.5s linear infinite ;
+}
+
+#carga1{
+
+	background:url(../img/engrane.png);
+	background-size:cover;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+-webkit-animation: gira 1.5s linear infinite;
+-o-animation: gira 1.5s linear infinite ;
+animation: gira 1.5s linear infinite ;
+}
+#f{
+
+	background:url(../img/f.png);
+	background-size:cover;	
+	height: 160px;
+	width: 70px;
+	position: absolute;
+	top: 0;
+	left: 230px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+@keyframes gira {
+	from {transfor: rotate (0deg);}
+	to {transform: rotate(360deg);}
+}
+@keyframes girar {
+	from {transfor: rotate (0deg);}
+	to {transform: rotate(-360deg);}
+}
+

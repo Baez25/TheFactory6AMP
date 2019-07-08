@@ -1,0 +1,104 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+
+	background: black;
+}
+
+.container{
+	position: relative;
+	top: 20px;
+	width: 90%;
+	height: auto;
+	background: none;
+	margin: auto;
+}
+
+.container .list-image{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container .list-image li{
+	margin-right: 10px;
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.container .list-image li .contenedor{
+	position: relative;
+	width: 250px;
+	height: 190px;
+	background: #fff; 
+	border-radius: 3px;
+}
+
+.container .list-image li .contenedor img{
+	position: relative;
+	width: 250px;
+	height:150px; 
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+
+}
+
+.container .list-image li .contenedor .informacion{
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background: none;
+	align-items: center;
+}
+.container .list-image li .contenedor .informacion .name-image {
+	font-family: "Open Sans";
+	font-size: 16px;
+	margin-left: 8px;
+	display: flex;
+
+}
+
+.container .list-image li .contenedor .informacion .moreinfo{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	display: block;
+	text-decoration: none;
+	color: #000D61;
+	font-family: "Open Sans";
+	padding: 8px 12px; 	
+	font-size: 14px;
+	border-radius:90px;
+	border:2px solid #000D61;
+	line-height: 10px;
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.container .list-image li .contenedor .informacion .moreinfo:hover {
+	background: #000D61;
+    color: white;
+    border:2px solid white;
+}
+
+.titulo{
+	color:#fff;
+	padding: 20px;
+}
+
+.firma{
+	color: #ffff;
+font-family: 'Herr Von Muellerhoff', cursive;
+position: absolute;
+right: 10px;
+font-size: 40px;
+padding: 20px
+}

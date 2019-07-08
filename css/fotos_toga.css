@@ -1,0 +1,164 @@
+*,*:after, *:before{
+	margin: 0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+body{
+	background: #444;
+	margin:0;
+}
+
+hi{
+	color:#fff;
+	text-align: center;
+}
+
+.galeria{
+	width: 90%
+	margin:auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria li{
+	margin: 5px;
+}
+
+.galeria img{
+	width: 300px;
+
+}
+
+.modal{
+display: none;
+}
+
+.modal:target{
+	display: block;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+}
+h3{
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+}
+.imagen{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a{
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.imagen img{
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	border: 5px solid #fff;
+	box-sizing: border-box;
+
+}
+
+.cerrar {
+	font-size: 25px;
+	text-decoration: none;
+	color: #fff;
+
+}
+
+
+
+/*Pantalla de carga*/
+#contenedor_carga{
+	background-color: rgba(250, 240, 245, 0.9);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	z-index: 10000;
+}	
+
+#carga{
+
+	background:url(../img/engrane.png);
+	background-size:cover;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 50px;
+	bottom: 0;
+	margin: auto;
+-webkit-animation: girar 1.5s linear infinite;
+-o-animation: girar 1.5s linear infinite ;
+animation: girar 1.5s linear infinite ;
+}
+
+#carga1{
+
+	background:url(../img/engrane.png);
+	background-size:cover;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+-webkit-animation: gira 1.5s linear infinite;
+-o-animation: gira 1.5s linear infinite ;
+animation: gira 1.5s linear infinite ;
+}
+#f{
+
+	background:url(../img/f.png);
+	background-size:cover;	
+	height: 160px;
+	width: 70px;
+	position: absolute;
+	top: 0;
+	left: 230px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+@keyframes gira {
+	from {transfor: rotate (0deg);}
+	to {transform: rotate(360deg);}
+}
+@keyframes girar {
+	from {transfor: rotate (0deg);}
+	to {transform: rotate(-360deg);}
+}
+
+
